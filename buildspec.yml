@@ -1,4 +1,5 @@
 version: 0.2
+
 phases:
   install:
     commands:
@@ -6,9 +7,9 @@ phases:
       - npm install
   build:
     commands:
-      - echo "Synthesizing and deploying CDK stack for student 9020861..."
+      - echo "Synthesizing CDK stack for student 9020861..."
       - cdk synth
-      - cdk deploy --require-approval never
+
 artifacts:
   files:
-    - '**/*'
+    - 'cdk.out/CdkAssignment22020861Stack.template.json'
