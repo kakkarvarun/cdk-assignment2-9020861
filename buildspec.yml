@@ -1,0 +1,14 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - npm install -g aws-cdk
+      - npm install
+  build:
+    commands:
+      - echo "Synthesizing and deploying CDK stack for student 9020861..."
+      - cdk synth
+      - cdk deploy --require-approval never
+artifacts:
+  files:
+    - '**/*'
