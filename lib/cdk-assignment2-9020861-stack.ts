@@ -37,7 +37,7 @@ export class CdkAssignment22020861Stack extends Stack {
           console.log('Lambda invoked for student 9020861!', JSON.stringify(event));
           return {
             statusCode: 200,
-            body: 'Hello from Lambda for student 9020861!'
+            body: 'Hello from updated Lambda for student 9020861 (v2)!'
           };
         };
       `),
